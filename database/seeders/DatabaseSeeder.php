@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +20,16 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        $data = [
+            ["title" => "Work"],
+            ["title" => "Personal"],
+            ["title" => "Urgent"]
+        ];
+        foreach ($data as $item) {
+            Category::create([
+                "title" => $item["title"]
+            ]);
+        }
     }
 }
