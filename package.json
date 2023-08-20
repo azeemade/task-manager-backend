@@ -5,11 +5,20 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue": "^4.0.0",
         "axios": "^1.1.2",
+        "bootstrap": "^5.2.3",
         "laravel-vite-plugin": "^0.7.2",
-        "vite": "^4.0.0"
+        "sass": "^1.56.1",
+        "vite": "^4.0.0",
+        "vue": "^3.2.37"
     },
     "dependencies": {
+        "@apollo/client": "^3.8.1",
+        "@vue/apollo-composable": "^4.0.0-beta.8",
+        "graphql": "^16.8.0",
+        "graphql-tag": "^2.12.6",
         "vercel": "^31.4.0"
     }
 }
