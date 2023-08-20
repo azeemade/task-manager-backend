@@ -12,11 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('task_categories', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('task_id');
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('task_id')->references('id')->on('tasks')->onDelete('cascade');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreignUuid('task_id')->references('id')->on('tasks')->onDelete('cascade');
+            $table->foreignUuid('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }
