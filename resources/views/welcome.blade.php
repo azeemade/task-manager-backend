@@ -827,7 +827,6 @@
 </head>
 
 <body class="antialiased">
-    <div>Heloooo</div>
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
         @if (Route::has('login'))
@@ -875,9 +874,9 @@
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel has hello world wonderful documentation covering every aspect of the framework.
-                                Whether you are a newcomer or have prior experience with Laravel, we recommend reading
-                                our documentation from beginning to end.
+                                Laravel has wonderful documentation covering every aspect of the framework. Whether you
+                                are a newcomer or have prior experience with Laravel, we recommend reading our
+                                documentation from beginning to end.
                             </p>
                         </div>
 
